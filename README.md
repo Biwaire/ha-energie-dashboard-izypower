@@ -1,9 +1,17 @@
-# Dashboard énergie pour Home Assistant — version batteries Izypower Titan
+# ha-energie-dashboard-izypower
+
+Tableau de bord énergie plein écran pour **Home Assistant**, adapté aux batteries **Izypower Titan** (1 à 4 batteries) : flux d'énergie en direct, performance du jour, courbe 24 h, batteries, heures creuses, prévisions Solcast, commandes et assistant.
+
+![Aperçu du dashboard](images/apercu.png)
+
+> **Basé sur [ha-energie-dashboard](https://github.com/tazzdel/ha-energie-dashboard) de tazzdel**, adapté et partagé avec son accord écrit. Merci à lui pour le design et la base du projet.
+
+**Démarrage rapide :** copiez `energie.html` dans `/config/www/`, ajoutez une carte iframe `url: /local/energie.html?v=1`, ouvrez le tableau de bord. Tout est détecté automatiquement. Détails ci-dessous.
 
 Tableau de bord plein écran (flux d'énergie en direct, performance du jour, courbe 24 h, batteries, commandes, météo).
 Pensé pour un écran dédié (tablette murale, TV, mini-PC), en 1600 × 900.
 
-## Crédits et accord de l'auteur
+## Crédits
 
 - **Dashboard d'origine : « ha-energie-dashboard » de tazzdel** — https://github.com/tazzdel/ha-energie-dashboard
   Tout le mérite du design et de la base revient à son auteur.
@@ -69,3 +77,13 @@ Pour forcer un capteur, ouvrez le fichier avec un éditeur de texte et cherchez 
 ## Responsabilité
 
 Fichier fourni tel quel, sans garantie. Vous réglez vos batteries sous votre responsabilité ; testez d'abord avec un petit changement.
+
+## English (short)
+
+Full-screen energy dashboard for Home Assistant, adapted for **Izypower Titan** batteries (1 to 4 units). It is an adaptation of [tazzdel/ha-energie-dashboard](https://github.com/tazzdel/ha-energie-dashboard), shared with the original author's written permission. Copy `energie.html` to `/config/www/`, add an iframe card pointing to `/local/energie.html?v=1`. Sensors (solar, grid, Titan batteries, EV charger, Solcast, weather) are auto-discovered; manual overrides are in the `ENTITÉS` section of the file. Not affiliated with Izypower.
+
+## Droits d'utilisation
+
+Le dashboard d'origine est de **tazzdel** et n'est pas publié sous licence ouverte. Cette adaptation est partagée avec son accord écrit, à condition de **citer l'auteur d'origine avec le lien** vers son dépôt. Merci de ne pas la présenter comme votre propre travail. Pour tout autre usage (redistribution, modification publique), voyez avec l'auteur d'origine.
+
+Adaptation : Biwaire.
